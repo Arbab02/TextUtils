@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>TextUtils</title>
+  <link href="CSS/style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+</head>
+
+<body>
+  <h1>TextUtils App</h1>
+
+  <!--Container Starting-->
+  <div class="container">
+    
+    <!--Tool Box Starting-->
+    <div id="tools">
+
+      <!--Text Formatting Starting-->
+      <img src="CSS/images/bold.png" onclick="bold()">
+      <img src="CSS/images/italic.png" onclick="italic()">
+      <img src="CSS/images/underline.png" onclick="underline()">
+      <!--Text Formatting Ending-->
+
+      <!--Case Box Starting-->
+      <div id="case-box">
+        <img src="CSS/images/uppercase.png" onclick="up()" title="Upper Case">
+        <img src="CSS/images/lowercase.png" onclick="low()" title="Lower Case">
+        <img src="CSS/images/capitalize.png" onclick="Cap()" title="Capitalize Each Word" id="Cap">
+      </div>
+      <!--Case Box Ending-->
+
+      <!--Align Box Starting-->
+      <div id="align-box">
+        <img src="CSS/images/center.jpg" onclick="center()" class="case">
+        <img src="CSS/images/left.jpg" onclick="left()" class="case">
+        <img src="CSS/images/right.jpg" onclick="right()" class="case">
+        <img src="CSS/images/justify.jpg" onclick="justify()" class="case">
+      </div>
+      <!--Align Box Ending-->
+
+      <!--Font Box Starting-->
+      <div id="font-box">
+        <input type="text" id="color" placeholder="Font Color">
+        <button onclick="color()" class="btn">Apply</button>
+        <input type="text" id="bgColor" placeholder="Background Color">
+        <button onclick="bg()" class="btn">Apply</button>
+        <input type="text" id="sizer" placeholder="Font Size">
+        <button onclick="sizer()" class="btn">Apply</button>
+        <input type="text" id="family" placeholder="Font Famliy">
+        <button onclick="family()" class="btn">Apply</button>
+      </div>
+      <!--Font Box Ending-->
+      
+<!--Counters Starting-->
+      <div class="counters">
+        <label id="lb1"></label>
+        <button id="cw" onclick="words()" class="counter-btn">Count words</button>
+      </div>
+      <div class="counters">
+        <label id="lb2"></label>
+        <button id="cl" onclick="letters()" class="counter-btn">Count letters</button>
+      </div>
+      <!--Counters Ending-->
+
+      <!--Clear Button Starting-->
+      <button onclick="erase()" id="clear">Clear</button>
+       <!--Clear Button Ending-->
+      
+    </div>
+    <!--Tool Box Ending-->
+
+    <!--Text Area Starting-->
+    <textarea id="text"></textarea>
+    <!--Text Area Ending-->
+
+  </div>
+   <!--Container Ending-->
+  
+  <script src="script.js"></script>
+
+</body>
+
+</html>
